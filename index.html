@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ini Bootstrap</title>
+    <title>Nandinaza portofolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <style>
@@ -17,7 +17,7 @@
         .b{
           background-color: rgb(237, 220, 220);
           min-height: 100vh;
-          padding-top: 70px;
+          padding-top: 30px;
         }
         .zoom{
           transition: transform .2s;
@@ -29,15 +29,12 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-danger bg-danger">
-        <div class="container">
+        <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img src="mobile-button.png" alt="" width="30" height="30" style="opacity: 0;">
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="d-flex justify-content-between" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
               </li>
@@ -47,7 +44,6 @@
               <li class="nav-item">
                 <a class="nav-link text-light" href="#">social media</a>
               </li>
-      
             </ul>
           </div>
         </div>
@@ -64,7 +60,8 @@
                   <button type="button" class="btn btn-danger">Go Down</button>
                 </a>
             </div>
-            <img src="mobile-button.png" alt="mobile-button.png">
+            <img src="image_prestasi/image_profile.png" alt="mobile-button.png"
+            style="margin-bottom: -120px;">
         </div>
       </section>
 
@@ -79,27 +76,31 @@
           <div class="container d-flex align-items-center justify-content-center" id="taros">
             <div class="card-group">
               <div class="card">
-                <img src="image_prestasi/ini_certificate.png" class="card-img-top" alt="...">
+                <img src="image_prestasi/jarkom_labs.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  <h5 class="card-title">Sertifikat Jaringan Komputer</h5>
+                  <p class="card-text">This certificate is obtained by completing the final assignment of the 
+                    DevOps learning class organized by Dicoding.</p>
+                  <p class="card-text"><small class="text-muted">(link)</small></p>
                 </div>
               </div>
               <div class="card">
-                <img src="image_prestasi/ini_certificate.png" class="card-img-top" alt="...">
+                <img src="image_prestasi/sertifikat_amikom.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  <h5 class="card-title">USK 2023/2024</h5>
+                  <p class="card-text">Telah mengikuti ujuan sertifikasi komputer (USK) pada tahun 2023/2024 
+                    yang diselenggarakan pada tanggal 13 - 15 Maret 2024 bertempat di SMA Negeri 1 Sirampog. 
+                    dinyatakan lulus dengan hasil <strong>amat baik</strong>
+                  </p>
+                  <p class="card-text"><small class="text-muted">(link)</small></p>
                 </div>
               </div>
               <div class="card">
-                <img src="image_prestasi/ini_certificate.png" class="card-img-top" alt="...">
+                <img src="image_prestasi/artifisial.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  <h5 class="card-title">Sertifikat Mechine Learning</h5>
+                  <p class="card-text">certificate from dicoding for completing the machine learning class</p>
+                  <p class="card-text"><small class="text-muted">(link)</small></p>
                 </div>
               </div>
             </div>
@@ -124,7 +125,7 @@
                   <p class="card-text">this is a simple game thats made using godot engine,
                      This game is about how you can destroy many enemy blocks using a simple ship, 
                      The longer you play the game the harder it will be, now try to get the best score</p>
-                  <button type="button" class="btn btn-danger">Try</button>
+                  <button type="button" class="btn btn-danger" disabled>Try</button>
                 </div>
               </div>
             </div>
@@ -132,9 +133,13 @@
         </div>
         <div class="container zoom">
           <div class="card bg-dark text-white">
-            <img src="..." class="card-img" alt="..." style="min-height: 300px;">
-            <div class="card-img-overlay d-flex align-items-end">
-              <p class="card-text">ini tulisan</p>
+            <img src="image_prestasi/background.png" class="card-img" alt="..." style="min-height: 300px; background-attachment: fixed;">
+            <div class="card-img-overlay d-flex justify-content-end">
+              <p class="card-text" style="max-width: 500px;">Semenjak saya SMA saya mulai suka bermain dengan Dunia pemprogramman
+                saya belajar secara otodidak dan selalu menyempatkan waktu setiap hari untuk belajar pemprogramman,
+                semakin lama saya belajar, saya semakin sadar bahwa skill yang saya miliki ini masih perlu untuk dilatih
+                dan perjalan saya masih panjang, besar harapan saya untuk bisa bergabung dengan RESTEK UNY.
+              </p>
             </div>
           </div>
         </div>
@@ -146,14 +151,14 @@
 
         <section style="color: antiquewhite;">
           <footer>
-            <div class="container" style="padding-top: 20px;">
+            <div class="container" style="padding-top: 20px;" id="socialmm">
               <h4>Social media</h4>
               <hr>
               <ul>
-                <li><p>Instagram <a href="#">akunig</a></p></li>
-                <li><p>Whatsapp <a href="#">akunig</a></p></li>
-                <li><p>Youtube <a href="#">akunig</a></p></li>
-                <li><p>facebook <a href="#">akunig</a></p></li>
+                <li><p>Instagram <a href="#socialmm">None</a></p></li>
+                <li><p>Whatsapp <a href="https://wa.me/0859148257735">0859-1482-57735</a></p></li>
+                <li><p>Youtube <a href="#socialmm">None</a></p></li>
+                <li><p>facebook <a href="#socialmm">None</a></p></li>
               </ul>
             </div>
           </footer>
