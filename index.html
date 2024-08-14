@@ -14,6 +14,17 @@
         body{
           background-color: black;
         }
+        .b{
+          background-color: rgb(237, 220, 220);
+          min-height: 100vh;
+          padding-top: 70px;
+        }
+        .zoom{
+          transition: transform .2s;
+        }
+        .zoom:hover{
+          transform: scale(1.1);
+        }
     </style>
 </head>
 <body>
@@ -96,9 +107,42 @@
           <br>
        </section>
 
-       <!-- end cardbox -->
+      <!-- end cardbox -->
+      
+      <!-- start gameshow -->
 
-        <!-- start footer -->
+       <section class="gameshow b">
+        <div class="container zoom">
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="..." class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Try my game</h5>
+                  <p class="card-text">this is a simple game thats made using godot engine,
+                     This game is about how you can destroy many enemy blocks using a simple ship, 
+                     The longer you play the game the harder it will be, now try to get the best score</p>
+                  <button type="button" class="btn btn-danger">Try</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container zoom">
+          <div class="card bg-dark text-white">
+            <img src="..." class="card-img" alt="..." style="min-height: 300px;">
+            <div class="card-img-overlay d-flex align-items-end">
+              <p class="card-text">ini tulisan</p>
+            </div>
+          </div>
+        </div>
+       </section>
+      
+      <!-- end gameshow -->
+
+      <!-- start footer -->
 
         <section style="color: antiquewhite;">
           <footer>
